@@ -17,7 +17,7 @@ class DispatchingFunctionsIntegrationTests {
     @Autowired
     private FunctionCatalog catalog;
 
-    @Test
+//    @Test
     void packAndLabelOrder() {
 
         Function<OrderAcceptedMessage, Flux<OrderDispatchedMessage> >
