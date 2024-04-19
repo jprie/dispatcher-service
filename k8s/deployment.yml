@@ -31,10 +31,7 @@ spec:
           env:
             - name: BPM_JVM_THREAD_COUNT
               value: "50"
-            - name: SPRING_CLOUD_CONFIG_URI
-              value: http://config-service:8888
-            - name: SPRING_RABBITMQ_HOST
-              value: polar-rabbitmq
+
           livenessProbe:
             httpGet:
               port: 9003
