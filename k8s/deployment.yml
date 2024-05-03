@@ -44,3 +44,11 @@ spec:
               path: /actuator/health/readiness
             initialDelaySeconds: 20
             periodSeconds: 15
+
+          volumeMounts:
+            - mountPath: /workspace/config
+              name: dispatcher-config-volume
+      volumes:
+        - name: dispatcher-config-volume
+          configMap:
+            name: dispatcher-config
